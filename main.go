@@ -16,7 +16,7 @@ func main() {
 	//}
 	router := chi.NewRouter()
 	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		err := json.NewEncoder(w).Encode("hello world")
+		err := json.NewEncoder(w).Encode("Testing")
 		if err != nil {
 			return
 		}
